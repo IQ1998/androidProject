@@ -15,35 +15,44 @@ public class Song {
         File = file;
     }
 
-    public String getTitle() {
-        return Title;
+    public Song(String title, String artist, int imageAlbum) {
+        Title = title;
+        Artist = artist;
+        ImageAlbum = imageAlbum;
     }
 
+    //Setter
     public void setTitle(String title) {
         Title = title;
     }
-
-    public String getArtist() {
-        return Artist;
-    }
-
     public void setArtist(String artist) {
         Artist = artist;
     }
-
-    public int getImageAlbum() {
-        return ImageAlbum;
+    public void setFile(int file) {
+        File = file;
     }
-
     public void setImageAlbum(int imageAlbum) {
         ImageAlbum = imageAlbum;
     }
 
+
+// Getter
+    public String getTitle() {
+        return Title;
+    }
+    public String getArtist() {
+        return Artist;
+    }
     public int getFile() {
         return File;
     }
-
-    public void setFile(int file) {
-        File = file;
+    public int getImageAlbum() {
+        return ImageAlbum;
     }
+
+
+
+
+
+
 }
